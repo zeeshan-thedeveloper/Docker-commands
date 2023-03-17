@@ -25,7 +25,7 @@
 #### 15. doctl compute load-balancer list --format Name,Created,IP,Status
 #### 16. doctl auth init
 #### 16. doctl registry delete [REGISTRY_NAME]
-#### 16. doctl auth init
+#### 16. docker build -t registry.digitalocean.com/[REGISTRY_NAME]/RBW_APP:latest .
 #### 16. doctl auth init
 #### 16. doctl auth init
 
