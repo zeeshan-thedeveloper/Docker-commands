@@ -24,10 +24,10 @@
 #### 14. kubectl expose deployment [APP_NAME] --type=LoadBalancer --port=80 --target-port=80
 #### 15. doctl compute load-balancer list --format Name,Created,IP,Status
 #### 16. doctl auth init
-#### 16. doctl registry delete [REGISTRY_NAME]
-#### 16. docker build -t registry.digitalocean.com/[REGISTRY_NAME]/RBW_APP:latest .
-#### 16. doctl auth init
-#### 16. doctl auth init
+#### 17. doctl registry delete [REGISTRY_NAME]
+#### 18. docker build -t registry.digitalocean.com/[REGISTRY_NAME]/RBW_APP:latest .
+#### 19. doctl registry delete registry.digitalocean.com/[REGISTRY_NAME]/[APP_NAME]:latest
+#### 20. doctl auth init
 
 
 
