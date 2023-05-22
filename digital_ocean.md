@@ -4,7 +4,8 @@
 #### 3. doctl registry create [REGISTRY_NAME]
 #### 4. doctl registry login
 #### [must] : doctl registry kubernetes-manifest | kubectl apply -f -
-#### 5. docker tag [APP_NAME] registry.digitalocean.com/[REGISTRY_NAME]/[APP_NAME]
+#### 5.docker tag your_image_name:existing_tag your_dockerhub_username/your_image_name:new_tag
+
 #### 6. docker push registry.digitalocean.com/[REGISTRY_NAME]/[APP_NAME]
 #### 7. docker run -p 80:80 registry.digitalocean.com/[REGISTRY_NAME]/[APP_NAME]
 #### 8. doctl kubernetes cluster create [CLUSTER_NAME] --tag [APP_TAG] --auto-upgrade=true --node-pool "name=[APP_POOL_NAME];count=2;auto-scale=true;min-nodes=1;max-nodes=3;tag=[APP_TAG]"
