@@ -5,6 +5,8 @@
 #### 4. doctl registry login
 #### [must] : doctl registry kubernetes-manifest | kubectl apply -f -
 #### 5.docker tag your_image_name:existing_tag your_dockerhub_username/your_image_name:new_tag
+docker tag rbw-app-v-1:1.3 zeeshanahmed0010/rbw-app-v-1:1.4
+kubectl set image deployment/rbw-load-balancer rbw-app-v-1=zeeshanahmed0010/rbw-app-v-1:1.4
 
 #### 6. docker push registry.digitalocean.com/[REGISTRY_NAME]/[APP_NAME]
 #### 7. docker run -p 80:80 registry.digitalocean.com/[REGISTRY_NAME]/[APP_NAME]
